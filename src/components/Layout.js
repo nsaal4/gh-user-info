@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import Form from './Form'
+import Form from './InputForm'
+import UserInfo from './UserInfo'
 
 class Layout extends Component {
     
@@ -9,7 +10,8 @@ class Layout extends Component {
         return(
         <div className="">
             <Header />
-            <Form setDetails={this.props.setDetails}/> 
+            <Form />
+            <UserInfo />
             <Footer />
         </div>
         )
