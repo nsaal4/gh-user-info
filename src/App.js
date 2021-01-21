@@ -12,16 +12,14 @@ class App extends Component {
 
   }
 
-  setDetails(details) {
-    this.setState({
-      name: details.userName,
-    })
+  userDetails = () => {
+  
   }
 
   render() {
     return(
       <div className="center">
-        <Layout setDetails={this.setDetails.bind(this)}/>
+        <Layout userDetails={this.userDetails}/>
       </div>
     )
   }

@@ -11,7 +11,7 @@ class Layout extends Component {
         <div className="">
             <Header />
             <Form />
-            <UserInfo />
+            <UserInfo userDetails={this.props.userDetails}/>
             <Footer />
         </div>
         )
